@@ -1,0 +1,119 @@
+.hamburger-menu {
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 24px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  padding: 10px 0;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 16px;
+}
+
+.menu ul li a,
+.menu ul li button.dropdown-toggle {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover,
+.menu ul li button.dropdown-toggle:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.mobile-dropdown {
+  list-style: none;
+  padding-left: 16px;
+  margin-top: 4px;
+}
+
+.mobile-dropdown li a {
+  display: block;
+  padding: 8px 0 8px 12px;
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+}
+
+.mobile-dropdown li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+    top: 40px;
+    right: 0;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

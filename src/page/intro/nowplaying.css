@@ -1,0 +1,98 @@
+.nowplaying-container {
+  text-align: center;
+  background-color: grey;
+  padding: 50px 20px;
+  color: white;
+}
+
+.nowplaying-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.nowplaying-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nowplaying-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.nowplaying-item:hover {
+  transform: scale(1.05);
+}
+
+.nowplaying-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid red;
+}
+
+.nowplaying-info {
+  padding: 20px;
+}
+
+.nowplaying-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+.nowplaying-time {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.nowplaying-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Button styles */
+.nowplaying-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.more-info-btn,
+.buy-tickets-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover,
+.buy-tickets-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .nowplaying-showcase {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nowplaying-item {
+    width: 100%;
+  }
+}

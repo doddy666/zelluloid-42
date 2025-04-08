@@ -1,0 +1,21 @@
+.env
+.env.local
+.env.development
+.env.production
+
+# Node.js und Paketmanager
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build-Ordner (z. B. React, Next.js, Vue, Angular)
+build/
+.cache/
+
+# MacOS spezifische Dateien
+.DS_Store
+
+# Logs und temporäre Dateien
+*.log
+*.lock

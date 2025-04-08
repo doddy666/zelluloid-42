@@ -1,0 +1,43 @@
+.zelluloid-button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 1.5em 0.4em;
+  font-family: "Impact", "Arial", sans-serif;
+  font-weight: 200;
+  font-size: 1.05em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+  background-color: #cf322b;
+  border: 2px solid #cf322b;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease-in-out;
+}
+
+.zelluloid-button:hover {
+  background-color: #fff;
+  color: #cf322b;
+  border-color: #cf322b;
+  transform: translateY(-1px);
+}
+
+.zelluloid-button:active {
+  transform: translateY(0);
+}
+
+.zelluloid-button.button--black {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.zelluloid-button.button--black:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}

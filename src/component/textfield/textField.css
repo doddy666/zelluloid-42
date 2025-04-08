@@ -1,0 +1,36 @@
+.textfield {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 1.8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.textfield label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.textfield input {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 8px;
+  width: 80%;
+  max-width: 300px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  outline: none;
+}
+
+.textfield input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}

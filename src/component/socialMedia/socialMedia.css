@@ -1,0 +1,36 @@
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none; 
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-button:hover {
+  transform: translateY(-2px) scale(1.1); 
+}
+
+.instagram-button:hover,
+.facebook-button:hover,
+.youtube-button:hover {
+  background-color: #322e2e;
+}
+
+@media (max-width: 768px) {
+  .social-button {
+    font-size: 1.2rem; 
+    padding: 8px;
+  }
+}

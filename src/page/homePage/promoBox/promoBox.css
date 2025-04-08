@@ -1,0 +1,89 @@
+.promo-box-wrapper {
+    background-color: white;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .promo-title h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 2px; 
+    margin-bottom: 1px;
+  }
+  
+  .promo-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 26px;
+  }
+  
+  .promo-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .promo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .promo-date-top {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .promo-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.promo-item button,
+.promo-item .zelluloid-button {
+  margin-top: 12px;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promo-image:hover {
+    transform: scale(1.02);
+  }
+  
+  @media (max-width: 768px) {
+    .promo-box {
+      gap: 52px;
+      justify-content: center; 
+    }
+  
+    .promo-item {
+      align-items: center; 
+      text-align: center;
+    }
+  
+    .promo-image {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; 
+    }
+  }

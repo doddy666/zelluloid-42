@@ -8,7 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '',
+    publicPath: process.env.NODE_ENV === 'production' ? '/zelluloid-42/' : '/',
+
     clean: true,
   },
 
@@ -74,9 +75,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       inject: 'body',
+      favicon: './public/favicon.ico', // falls vorhanden
+      meta: {
+        viewport: 'width=device-width, initial-scale=1',
+        description: 'Monthly 35/16mm double feature at Filmrauschpalast Berlin.',
+      },
+      title: 'Zelluloid 42',
     }),
     new webpack.HotModuleReplacementPlugin(),
-  ],
+  ],  
 
   devtool: false,
 

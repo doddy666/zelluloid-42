@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import logo from '../Images/Z42_logo.jpg';
+import logo from '../../page/assets/images/Z42_logo.jpg';
 import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
 
 const Header = () => {

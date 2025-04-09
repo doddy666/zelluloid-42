@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const redirectTo = '/' + location.pathname.replace(/^\//, '') + location.search + location.hash;
+      sessionStorage.redirect = redirectTo;
+      location.replace('/');
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting…</h1>
+  </body>
+</html>

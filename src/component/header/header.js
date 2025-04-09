@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import logo from '../Images/Z42_logo.jpg';
 import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
 
 const Header = () => {
@@ -9,11 +10,11 @@ const Header = () => {
       <div className="logo-section">
 
         <Link to="/">
-          <img
-          src="../Images/Z42_logo.jpg" 
-            alt="Pleasure Dome Logo"
-            className="header-logo"
-          />
+        <img
+  src={logo}
+  alt="Pleasure Dome Logo"
+  className="header-logo"
+/>
         </Link>
         <h1>Monthly 35/16mm double feature at Filmrauschpalast Berlin.</h1>   
       </div>

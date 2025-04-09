@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './notFound.css';
 
 const NotFound = () => {
   return (
     <div className="not-found">
-      <h1>404 - not found</h1>
-      <p>Oops! The page you are looking for is not existing.</p>
-      <Link to="/">Back to the homepage</Link>
+      <h1>404 – Page Not Found</h1>
+      <p>The page you’re looking for doesn’t exist or was moved.</p>
+      <a href="#/">Back to Home</a> {/* HashRouter braucht #/ */}
     </div>
   );
 };

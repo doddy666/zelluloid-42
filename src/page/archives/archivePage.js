@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import PDome1 from './images/PDome1.jpg';
+import PDome2 from './images/PDome2.jpg';
+import PDome3 from './images/PDome3.jpg';
+import PDome4 from './images/PDome4.jpg';
+import PDome5 from './images/PDome5.jpg';
 import './archivePage.css';
 
 const archiveData = [
-  { title: 'November 2024', imageUrl: "/Images/PDome5.jpg", description: 'Pleasure Dome 5' },
-  { title: 'October 2024', imageUrl: "/Images/PDome4.jpg", description: 'Pleasure Dome 4' },
-  { title: 'September 2024', imageUrl: "/Images/PDome3.jpg", description: 'Pleasure Dome 3' },
-  { title: 'August 2024', imageUrl: "/Images/PDome2.jpg", description: 'Pleasure Dome 2' },
-  { title: 'July 2024', imageUrl: "/Images/PDome1.jpg", description: 'Pleasure Dome 1' },
+  { title: 'November 2024', imageUrl: PDome5, description: 'Pleasure Dome 5' },
+  { title: 'October 2024', imageUrl: PDome4, description: 'Pleasure Dome 4' },
+  { title: 'September 2024', imageUrl: PDome3, description: 'Pleasure Dome 3' },
+  { title: 'August 2024', imageUrl: PDome2, description: 'Pleasure Dome 2' },
+  { title: 'July 2024', imageUrl: PDome1, description: 'Pleasure Dome 1' },
 ];
 
 const ArchivePage = () => {

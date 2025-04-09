@@ -1,5 +1,7 @@
 import React from 'react';
 import './promoBox.css';
+import domeImg from '/Images/PDome6.jpg';
+import vinegarImg from '/Images/VinegarSyndrome.jpg';
 import Button from '../../../component/button/button';
 
 const PromoBox = () => {
@@ -18,15 +20,11 @@ const PromoBox = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/Images/PDome6.jpg"
-              alt="Pleasure Dome"
-              className="promo-image"
-            />
+          <img src={domeImg} alt="Pleasure Dome" className="promo-image" />
           </a>
           <div className="button-group">
           <Button href="https://linktr.ee/zelluloid42">Buy Ticket</Button>
-<Button href="https://youtube.com" className="button--black">Watch Trailer</Button>
+<Button href="https://www.youtube.com/@ZelluloidZweiundvierzig/videos" className="button--black">Watch Trailer</Button>
 
           </div>
         </div>
@@ -38,15 +36,11 @@ const PromoBox = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/Images/VinegarSyndrome.jpg"
-              alt="Vinegar Syndrome"
-              className="promo-image"
-            />
+           <img src={vinegarImg} alt="Pleasure Dome" className="promo-image" />
           </a>
           <div className="button-group">
             <Button href="https://zelluloid42.bigcartel.com">Buy Ticket</Button>
-<Button href="https://youtube.com" className="button--black">Watch Trailer</Button>
+<Button href="https://youtu.be/Ykr6ZVNQq0c?si=ZEodNy37LkxgA_Jq" className="button--black">Watch Trailer</Button>
 
           </div>
         </div>

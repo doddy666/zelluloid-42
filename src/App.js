@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './component/header/header';
 import ArchivePage from './page/archives/archivePage';
 import Manifesto from './page/manifesto/manifesto';

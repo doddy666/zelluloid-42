@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: process.env.NODE_ENV === 'production' ? '/zelluloid-42/' : '/',
+    publicPath: '/zelluloid-42/',
     clean: true,
   },
 
@@ -19,55 +19,39 @@ module.exports = {
         exclude: /node_modules/,
         use: 'babel-loader',
       },
+
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name].[hash:8][ext]',
+        },
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'assets/images/[name].[hash:8].[ext]',
-            },
-          },
           {
             loader: 'image-webpack-loader',
-            enforce: 'pre',
             options: {
               disable: process.env.NODE_ENV !== 'production',
-              mozjpeg: {
-                progressive: true,
-                quality: 70,
-              },
-              optipng: {
-                enabled: true,
-              },
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              webp: {
-                quality: 75,
-              },
+              mozjpeg: { progressive: true, quality: 65 },
+              optipng: { enabled: true },
+              pngquant: { quality: [0.6, 0.8], speed: 4 },
+              gifsicle: { interlaced: false },
+              webp: { quality: 75 },
             },
           },
         ],
-      },      
+      },
+
       {
         test: /\.(mp4|webm|ogg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'static/media/[name].[hash:8].[ext]',
-            },
-          },
-        ],
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/media/[name].[hash:8][ext]',
+        },
       },
     ],
   },
@@ -76,15 +60,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       inject: 'body',
-      favicon: './public/favicon.ico', 
+      favicon: './public/favicon.ico',
       meta: {
         viewport: 'width=device-width, initial-scale=1',
         description: 'Monthly 35/16mm double feature at Filmrauschpalast Berlin.',
+        'og:title': 'Zelluloid 42',
+        'og:description': 'Berlin’s 35mm underground double-feature cult night.',
+        'og:type': 'website',
+        'twitter:card': 'summary_large_image',
       },
       title: 'Zelluloid 42',
     }),
     new webpack.HotModuleReplacementPlugin(),
-  ],  
+  ],
 
   devtool: false,
 

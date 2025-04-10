@@ -74,7 +74,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       inject: 'body',
-      favicon: './public/favicon.ico', // falls vorhanden
+      favicon: './public/favicon.ico', 
       meta: {
         viewport: 'width=device-width, initial-scale=1',
         description: 'Monthly 35/16mm double feature at Filmrauschpalast Berlin.',

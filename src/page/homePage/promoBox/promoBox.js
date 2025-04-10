@@ -1,7 +1,7 @@
 import React from 'react';
 import './promoBox.css';
-import domeImg from '../../page/assets/images/PDome6.jpg';
-import vinegarImg from '../../page/assets/images/VinegarSyndrome.jpg';
+import domeImg from '../../../assets/images/PDome6.jpg';
+import vinegarImg from '../../../assets/images/VinegarSyndrome.jpg';
 import Button from '../../../component/button/button';
 
 const PromoBox = () => {

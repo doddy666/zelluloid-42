@@ -1,29 +1,40 @@
 import React from 'react';
 import './footer.css'; 
 import SocialMediaButtons from '../socialMedia/socialMedia';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    return (
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-         
-          </div>
-          <div className="footer-nav">
-            <ul>
-              <li><a href="/homepage">Home</a></li>
-              <li><a href="https://linktr.ee/zelluloid42">Tickets</a></li>
-              <li><a href="/manifesto">Manifesto</a></li>
-              <li><a href="/archives">Archives</a></li>
-            </ul>
-          </div>
-          <div className="footer-social">
-            <SocialMediaButtons /> 
-          </div>
+  return (
+    <footer className="footer">
+      <div className="footer-content">
+
+        <div className="footer-logo">
         </div>
-  
-      </footer>
-    );
-  };
-  
-  export default Footer;
+
+        <div className="footer-nav">
+          <ul>
+            <li><Link to="/homepage">Home</Link></li>
+            <li>
+              <a
+                href="https://linktr.ee/zelluloid42"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tickets
+              </a>
+            </li>
+            <li><Link to="/manifesto">Manifesto</Link></li>
+            <li><Link to="/archives">Archives</Link></li>
+          </ul>
+        </div>
+
+        <div className="footer-social">
+          <SocialMediaButtons /> 
+        </div>
+
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

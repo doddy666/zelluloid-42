@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import PDome1 from '../assets/images/PDome1.jpg';
-import PDome2 from '../assets/images/PDome2.jpg';
-import PDome3 from '../assets/images/PDome3.jpg';
-import PDome4 from '../assets/images/PDome4.jpg';
-import PDome5 from '../assets/images/PDome5.jpg';
+import PDome1 from '../../page/assets/images/PDome1.jpg';
+import PDome2 from '../../page/assets/images/PDome2.jpg';
+import PDome3 from '../../page/assets/images/PDome3.jpg';
+import PDome4 from '../../page/assets/images/PDome4.jpg';
+import PDome5 from '../../page/assets/images/PDome5.jpg';
 import './archivePage.css';
 
 const archiveData = [

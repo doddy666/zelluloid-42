@@ -9,7 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: process.env.NODE_ENV === 'production' ? '/zelluloid-42/' : '/',
-
     clean: true,
   },
 

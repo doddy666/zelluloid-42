@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="pageWrapper">
         <Header />
-
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -23,7 +22,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
-
         <Footer />
       </div>
     </Router>

@@ -34,7 +34,9 @@ module.exports = {
           },
           {
             loader: 'image-webpack-loader',
+            enforce: 'pre',
             options: {
+              disable: process.env.NODE_ENV !== 'production',
               mozjpeg: {
                 progressive: true,
                 quality: 70,
@@ -55,7 +57,7 @@ module.exports = {
             },
           },
         ],
-      },
+      },      
       {
         test: /\.(mp4|webm|ogg)$/,
         use: [

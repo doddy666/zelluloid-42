@@ -6,7 +6,7 @@ import Manifesto from './page/manifesto/manifesto';
 import HomePage from './page/homePage/homePage';
 import Footer from './component/footer/footer';
 import NotFound from './page/notFound/notFound';
-import LegalAndPrivacy from './page/privacy/legal';
+import Legal from './page/privacy/legal';
 import './index.css'; 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/archives" element={<ArchivePage />} />
             <Route path="/manifesto" element={<Manifesto />} />
-            <Route path="/legal" element={<LegalAndPrivacy />} />
+            <Route path="/legal" element={<Legal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

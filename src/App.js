@@ -6,7 +6,7 @@ import Manifesto from './page/manifesto/manifesto';
 import HomePage from './page/homePage/homePage';
 import Footer from './component/footer/footer';
 import NotFound from './page/notFound/notFound';
-import Legal from './page/privacy/legal';
+import Legal from './page/privacy/legal/legal';
 import './index.css'; 
 
 function App() {

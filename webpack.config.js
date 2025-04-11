@@ -59,7 +59,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      inject: 'body',
+      inject: 'head',
       favicon: './public/favicon.ico',
       meta: {
         viewport: 'width=device-width, initial-scale=1',

@@ -31,16 +31,16 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   },
-  "scripts": {
-    "start": "webpack serve --mode development",
-    "dev": "npm run start",
-    "build": "webpack --mode production",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "test": "react-scripts test",
-    "preview": "serve -s dist",
-    "eject": "react-scripts eject"
-  },
+ "scripts": {
+  "start": "webpack serve --mode development",
+  "dev": "npm run start",
+  "build": "webpack --mode production",
+  "predeploy": "npm run build && echo 'www.zelluloid42.com' > dist/CNAME",
+  "deploy": "gh-pages -d dist",
+  "test": "react-scripts test",
+  "preview": "serve -s dist",
+  "eject": "react-scripts eject"
+},
   "browserslist": {
     "production": [
       ">0.2%",

@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/zelluloid-42/',
+    publicPath: '',
     clean: true,
   },
 

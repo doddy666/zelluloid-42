@@ -45,10 +45,12 @@
 }
 
 .menu ul li a,
-.menu ul li button.dropdown-toggle {
+.menu ul li button.dropdown-toggle,
+.mobile-dropdown li a {
   text-decoration: none;
   color: #333;
   font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
   background: none;
   border: none;
   width: 100%;
@@ -56,10 +58,12 @@
   cursor: pointer;
   padding: 10px 0;
   transition: color 0.3s ease;
+  font-weight: 400;
 }
 
 .menu ul li a:hover,
-.menu ul li button.dropdown-toggle:hover {
+.menu ul li button.dropdown-toggle:hover,
+.mobile-dropdown li a:hover {
   color: #000;
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -74,16 +78,7 @@
 .mobile-dropdown li a {
   display: block;
   padding: 8px 0 8px 12px;
-  font-size: 14px;
-  color: #444;
-  text-decoration: none;
 }
-
-.mobile-dropdown li a:hover {
-  text-decoration: underline;
-  color: #000;
-}
-
 
 @media (max-width: 768px) {
   .hamburger {

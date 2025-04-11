@@ -41,15 +41,18 @@ const ArchivePage = () => {
         {archiveData.map((item, index) => (
           <div key={index} className="archive-item">
             <img
-              src={item.imageUrl}
-              alt={item.title}
-              className="archive-image"
-              onClick={() => {
-                if (isDesktop) setModalImage(item.imageUrl);
-              }}
-              style={{ cursor: "default" }}
-
-            />
+  src={item.imageUrl}
+  alt={item.title}
+  className="archive-image"
+  loading="lazy"
+  width="400"
+  height="600"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  onClick={() => {
+    if (isDesktop) setModalImage(item.imageUrl);
+  }}
+  style={{ cursor: "default"}}
+/>
             <h3 className="archive-title">{item.title}</h3>
           </div>
         ))}

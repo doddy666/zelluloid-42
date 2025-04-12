@@ -45,7 +45,7 @@ function HamburgerMenu() {
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
                     >
-                      Weekender Vinegar Syndrome
+                      Vinegar Syndrome Weekender 
                     </a>
                   </li>
                 </ul>

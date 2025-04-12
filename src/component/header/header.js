@@ -38,7 +38,7 @@ const Header = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Weekender Vinegar Syndrome
+      Vinegar Syndrome Weekender
     </a>
   </div>
 </li>

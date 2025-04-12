@@ -2,7 +2,7 @@ import React from "react";
 import './aboutUs.css';
 import Textfield from '../../component/textfield/textField';
 
-const AboutUSPage = () => {
+const AboutUsPage = () => {
     return (
                 <div className="manifesto">
                     <div className='title'>
@@ -27,4 +27,4 @@ const AboutUSPage = () => {
     );
 };
 
-export default AboutUSPagePage;
+export default AboutUsPage;

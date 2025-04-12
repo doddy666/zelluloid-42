@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import Header from './component/header/header';
 import ArchivePage from './page/archives/archivePage';
-import Manifesto from './page/manifesto/manifesto';
+import AboutUSPage from './page/manifesto/aboutUs';
 import HomePage from './page/homePage/homePage';
 import Footer from './component/footer/footer';
 import NotFound from './page/notFound/notFound';
@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/archives" element={<ArchivePage />} />
-            <Route path="/manifesto" element={<Manifesto />} />
+            <Route path="/about" element={<AboutUSPage />} />
             <Route path="/legal" element={<Legal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

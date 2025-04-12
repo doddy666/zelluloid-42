@@ -9,7 +9,6 @@ const PromoBox = () => {
     <div className="promo-box-wrapper">
       <div className="promo-title">
         <h2>Upcoming Screenings</h2>
-        <p>All Shows Presented in Glorious 35mm (unless noted in 16mm)</p>
       </div>
 
       <div className="promo-box">

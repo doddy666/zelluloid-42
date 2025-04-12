@@ -26,12 +26,18 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'assets/images/[name].[hash:8][ext]',
-        },
+        test: /\.(png|jpe?g|gif|webp)$/i,
         use: [
+          {
+            loader: 'responsive-loader',
+            options: {
+              adapter: require('responsive-loader/sharp'),
+              name: 'assets/images/[name].[hash:8].[ext]',
+              quality: 75,
+              sizes: [480, 768, 1024, 1600, 1920],
+              placeholder: false,
+            },
+          },
           {
             loader: 'image-webpack-loader',
             options: {

@@ -52,7 +52,7 @@ function HamburgerMenu() {
               )}
             </li>
             <li>
-              <Link to="/manifesto" onClick={() => setIsOpen(false)}>Manifesto</Link>
+              <Link to="/about" onClick={() => setIsOpen(false)}>About us</Link>
             </li>
             <li>
               <Link to="/archives" onClick={() => setIsOpen(false)}>Past Events</Link>

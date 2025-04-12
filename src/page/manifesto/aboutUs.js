@@ -1,12 +1,12 @@
 import React from "react";
-import './manifesto.css';
+import './aboutUs.css';
 import Textfield from '../../component/textfield/textField';
 
-const ManifestoPage = () => {
+const AboutUSPage = () => {
     return (
                 <div className="manifesto">
                     <div className='title'>
-                        <h1>About <br/>Zelluloid 42 </h1>
+                        <h1>About <br/>Zelluloid Zweiundvierzig</h1>
                     </div>
                     <Textfield />
                     <p>
@@ -16,8 +16,8 @@ const ManifestoPage = () => {
             The cine-collective Zelluloid Zweinundvierzig is dedicated to such cinema, among other things, with a monthly double feature, the Pleasure Dome series in the small, technologically state-of-the-art Filmrauschpalast Moabit. 
           </p>
             <p>
-          The cinema that interests us is direct, attacking, sometimes simply nasty. Films that swallow you up, provoke and shift perspectives  – provided you're willing to engage with them and not just measure what’s on display against your own moral-political compass. Classics of exploitation, horror and erotic cinema are just as much a part of this wild ride as buried underground gems and the unjustly ostracized.
-            We are also striving for the best possible cinematic experience, to experience these raw, analog films in all their materiality and historicity as they were, for example, present in the notorious venues along New York's 42nd Street. </p>
+          The cinema that interests us is direct, attacking, sometimes simply nasty. Films that swallow you up, provoke and shift perspectives  – provided you're willing to engage with them and not just measure what's on display against your own moral-political compass. Classics of exploitation, horror and erotic cinema are just as much a part of this wild ride as buried underground gems and the unjustly ostracized.
+          We also strive for the best possible cinematic experience — to experience these raw, analog films in all their materiality and historicity as they were, for example, presented in the notorious venues along New York's 42nd Street. </p>
             <p>
             Whenever possible, we therefore screen celluloid copies and original language versions.</p>
             
@@ -27,4 +27,4 @@ const ManifestoPage = () => {
     );
 };
 
-export default ManifestoPage;
+export default AboutUSPagePage;

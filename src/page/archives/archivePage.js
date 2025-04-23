@@ -4,9 +4,11 @@ import PDome2 from '../../page/assets/images/PDome2.jpg';
 import PDome3 from '../../page/assets/images/PDome3.jpg';
 import PDome4 from '../../page/assets/images/PDome4.jpg';
 import PDome5 from '../../page/assets/images/PDome5.jpg';
+import PDome6 from '../../page/assets/images/PDome6.jpg';
 import './archivePage.css';
 
 const archiveData = [
+  { title: 'April 2025', imageUrl: PDome6, description: 'Pleasure Dome 6' },
   { title: 'November 2024', imageUrl: PDome5, description: 'Pleasure Dome 5' },
   { title: 'October 2024', imageUrl: PDome4, description: 'Pleasure Dome 4' },
   { title: 'September 2024', imageUrl: PDome3, description: 'Pleasure Dome 3' },

@@ -14,7 +14,6 @@ import './index.css';
 function App() {
   return (
     <Router>
-
       <div className="pageWrapper">      
         <HamburgerMenu />
         <Header />

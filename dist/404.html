@@ -1,9 +1,0 @@
-<script>
-  const base = "/zelluloid-42";
-  if (!location.hash.startsWith("#")) {
-    const path = location.pathname.startsWith(base)
-      ? location.pathname.slice(base.length)
-      : location.pathname;
-    location.replace(base + "/#" + path + location.search + location.hash);
-  }
-</script>

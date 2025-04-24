@@ -8,11 +8,13 @@ import Footer from './component/footer/footer';
 import NotFound from './page/notFound/notFound';
 import Festival from './page/festival/festival';
 import Legal from './page/privacy/legal';
+import HamburgerMenu from './component/hamburgerMenu/hamburgerMenu';
 import './index.css'; 
 
 function App() {
   return (
     <Router>
+      <HamburgerMenu />
       <div className="pageWrapper">
         <Header />
         <main>

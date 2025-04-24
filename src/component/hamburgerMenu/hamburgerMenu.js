@@ -1,3 +1,4 @@
+// ✅ HamburgerMenu.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './hamburgerMenu.css';
@@ -7,6 +8,11 @@ function HamburgerMenu() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => {
+    setIsOpen(false);
+    setShowDropdown(false);
+  };
+
   const toggleDropdown = () => setShowDropdown(!showDropdown);
 
   return (
@@ -16,52 +22,30 @@ function HamburgerMenu() {
         <span className="bar" />
         <span className="bar" />
       </div>
+
       {isOpen && (
-        <nav className="menu active">
+        <div className="fullscreen-menu">
+          <button className="close-button" onClick={closeMenu}>✕</button>
           <ul>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+            <li><Link to="/festival" onClick={closeMenu}>Weekender</Link></li>
             <li>
-              <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-            </li>
-            <li>
-              <Link to="/festival" onClick={() => setIsOpen(false)}>Weekender</Link>
-            </li>
-            <li>
-              <button className="dropdown-toggle" onClick={toggleDropdown}>
-                Tickets
-              </button>
+              <button className="dropdown-toggle" onClick={toggleDropdown}>Tickets</button>
               {showDropdown && (
                 <ul className="mobile-dropdown">
                   <li>
-                    <a
-                      href="https://linktr.ee/zelluloid42"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Pleasure Dome
-                    </a>
+                    <a href="https://linktr.ee/zelluloid42" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Pleasure Dome</a>
                   </li>
                   <li>
-                    <a
-                      href="https://zelluloid42.bigcartel.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Vinegar Syndrome Weekender 
-                    </a>
+                    <a href="https://zelluloid42.bigcartel.com/" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Weekender</a>
                   </li>
                 </ul>
               )}
             </li>
-            <li>
-              <Link to="/about" onClick={() => setIsOpen(false)}>About us</Link>
-            </li>
-            <li>
-              <Link to="/archives" onClick={() => setIsOpen(false)}>Past Events</Link>
-            </li>
+            <li><Link to="/about" onClick={closeMenu}>About us</Link></li>
+            <li><Link to="/archives" onClick={closeMenu}>Past Events</Link></li>
           </ul>
-        </nav>
+        </div>
       )}
     </div>
   );

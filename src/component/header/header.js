@@ -12,14 +12,13 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       clearTimeout(scrollTimeout);
 
       const timeout = setTimeout(() => {
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
-          setShowHeader(false); 
+          setShowHeader(false);
         } else {
-          setShowHeader(true); 
+          setShowHeader(true);
         }
         setLastScrollY(currentScrollY);
       }, 150);
@@ -28,7 +27,6 @@ const Header = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
       clearTimeout(scrollTimeout);
@@ -59,7 +57,6 @@ const Header = () => {
           <li><Link to="/archives">Past Events</Link></li>
         </ul>
       </nav>
-
       <HamburgerMenu />
     </header>
   );

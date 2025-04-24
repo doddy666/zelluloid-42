@@ -20,7 +20,6 @@ const PromoBox = () => {
           >
             <img src={vinegarImg} alt="Pleasure Dome" className="promo-image" />
           </a>
-          <img src={timeTable} alt="Timetable" className="promo-image" />
         </div>
         <div className="button-group">
           <Button href="https://zelluloid42.bigcartel.com">Buy Ticket</Button>

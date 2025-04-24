@@ -1,4 +1,5 @@
 .header-container {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,7 +7,20 @@
   background-color: white;
   width: 100%;
   box-sizing: border-box;
+  will-change: transform;
 }
+
+.header-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header-container.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 .logo-section {
   display: flex;

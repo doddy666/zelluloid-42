@@ -23,6 +23,9 @@ function HamburgerMenu() {
               <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
             </li>
             <li>
+              <Link to="/festival" onClick={() => setIsOpen(false)}>Weekender</Link>
+            </li>
+            <li>
               <button className="dropdown-toggle" onClick={toggleDropdown}>
                 Tickets
               </button>

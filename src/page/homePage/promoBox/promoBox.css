@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 90px;
+  gap: 150px;
   flex-wrap: wrap;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .promo-images-row img {
-  width: 390px;
+  width: 540px;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -81,8 +81,8 @@
 .promo-image {
   max-width: 100%;
   height: auto;
-  max-height: 500px;
-  border-radius: 4px;
+  max-height: 550px;
+  border-radius: 2px;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 8pxrgba(0, 0, 0, 0.1);
 }

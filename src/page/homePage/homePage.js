@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Background from "./background/background";
 import "./homePage.css"
 import PromoBox from '../homePage/promoBox/promoBox';
+import PromoBoxVs from "../homePage/promoBoxVS/promoBoxVs";
 
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
     <div className="home-page">
       <Background />
       <PromoBox />
+      <PromoBoxVs />
     </div>
   );
 };

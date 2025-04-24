@@ -1,0 +1,7 @@
+<script>
+    // Entferne ggf. führenden /zelluloid-42, aber nur einmal
+    const base = "/zelluloid-42";
+    const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : location.pathname;
+    location.replace(base + "/#" + path + location.search + location.hash);
+  </script>
+  

@@ -15,7 +15,7 @@ const schedule = [
   { date: 'Sunday, May 18', time: '20:00', title: 'ANGEL (1984, Robert Vincent O’Neil, 93 min., DCP)' },
 ];
 
-const SchedulePage = () => {
+const Festival = () => {
     let lastDate = null;
   
     return (
@@ -66,4 +66,4 @@ const SchedulePage = () => {
     
   };
   
-  export default SchedulePage;
+  export default Festival;

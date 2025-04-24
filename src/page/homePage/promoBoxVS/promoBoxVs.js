@@ -7,7 +7,6 @@ const PromoBox = () => {
   return (
     <div className="promo-box-wrapper">
       <div className="promo-title">
-        <h2>Vinegar Syndrome Weekender 2025</h2>
       </div>
 
       <div className="program-banner">

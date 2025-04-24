@@ -25,30 +25,33 @@ const SchedulePage = () => {
           <p>May 16–18, 2025</p>
         </header>
   
-        <div className="timeline-container">
-          <img src={timelineImage} alt="Festival Timeline" className="timeline-image" />
-        </div>
-  
-        <section className="schedule-list">
-          {schedule.map((event, index) => {
-            const showDateHeader = event.date !== lastDate;
-            lastDate = event.date;
-  
-            return (
-              <React.Fragment key={index}>
-                {showDateHeader && (
-                  <div className="schedule-day-separator">{event.date}</div>
-                )}
-                <div className="schedule-item">
-                  <div className="schedule-date-time">
-                    <span className="schedule-time">{event.time}</span>
-                  </div>
-                  <div className="schedule-title">{event.title}</div>
-                </div>
-              </React.Fragment>
-            );
-          })}
-        </section>
+        <div className="schedule-content">
+  <div className="timeline-container">
+    <img src={timelineImage} alt="Festival Timeline" className="timeline-image" />
+  </div>
+
+  <section className="schedule-list">
+    {schedule.map((event, index) => {
+      const showDateHeader = event.date !== lastDate;
+      lastDate = event.date;
+
+      return (
+        <React.Fragment key={index}>
+          {showDateHeader && (
+            <div className="schedule-day-separator">{event.date}</div>
+          )}
+          <div className="schedule-item">
+            <div className="schedule-date-time">
+              <span className="schedule-time">{event.time}</span>
+            </div>
+            <div className="schedule-title">{event.title}</div>
+          </div>
+        </React.Fragment>
+      );
+    })}
+  </section>
+</div>
+
 
         <div className="ticket-banner">
   <a href="https://zelluloid42.bigcartel.com" target="_blank" rel="noopener noreferrer">

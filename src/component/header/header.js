@@ -45,13 +45,23 @@ const Header = () => {
       <nav className="navbar">
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/festival">Weekender</Link></li>
-          <li className="dropdown">
-            <a className="dropbtn" href="#">Tickets</a>
-            <div className="dropdown-content">
-              <a href="https://linktr.ee/zelluloid42" target="_blank" rel="noopener noreferrer">Pleasure Dome</a>
-              <a href="https://zelluloid42.bigcartel.com/" target="_blank" rel="noopener noreferrer">Weekender</a>
-            </div>
+          <li>
+            <a
+              href="https://linktr.ee/zelluloid42"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tickets
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://zelluloid42.bigcartel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Merch
+            </a>
           </li>
           <li><Link to="/about">About us</Link></li>
           <li><Link to="/archives">Past Events</Link></li>

@@ -1,7 +1,4 @@
 <script>
-    const path = location.pathname.replace(/^\/zelluloid-42/, "");
-    if (!location.hash) {
-      location.replace("/zelluloid-42/#" + path + location.search + location.hash);
-    }
-  </script>
-  
+  const path = location.pathname.replace(/^\/zelluloid-42/, "");
+  location.replace("/zelluloid-42/#" + path + location.search + location.hash);
+</script>

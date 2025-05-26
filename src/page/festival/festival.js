@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import './festival.css';
 import timelineImage from '../assets/images/Timetable_sw.jpg';
 import Mausoleum from '../assets/images/Mausoleum.jpg';
@@ -66,4 +66,4 @@ const Festival = () => {
     
   };
   
-  export default Festival;
+  export default Festival;*/

@@ -1,7 +1,6 @@
 import React from 'react';
 import './promoBox.css';
-import timeTable from '../../assets/images/Timetable_sw.jpg';
-import vinegarImg from '../../assets/images/VinegarSyndrome.jpg';
+import pD7 from '../../assets/images/PDome7.jpg';
 import Button from '../../../component/button/button';
 
 const PromoBox = () => {
@@ -11,19 +10,19 @@ const PromoBox = () => {
         <h2>Upcoming Screenings</h2>
       </div>
       <div className="promo-item">
-        <div className="promo-date-top">May 16 – 18</div>
+        <div className="promo-date-top">June 15th</div>
         <div className="promo-images-row">
           <a
-            href="https://zelluloid42.bigcartel.com"
+            href="https://linktr.ee/zelluloid42"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={vinegarImg} alt="Pleasure Dome" className="promo-image" />
+            <img src={pD7} alt="Pleasure Dome" className="promo-image" />
           </a>
         </div>
         <div className="button-group">
-          <Button href="https://zelluloid42.bigcartel.com">Buy Ticket</Button>
-          <Button href="https://youtu.be/Ykr6ZVNQq0c?si=ZEodNy37LkxgA_Jq" className="button--black">Watch Trailer</Button>
+          <Button href="https://linktr.ee/zelluloid42">Buy Ticket</Button>
+          <Button href="https://www.youtube.com/@ZelluloidZweiundvierzig/videos" className="button--black">Watch Trailer</Button>
         </div>
       </div>
     </div>

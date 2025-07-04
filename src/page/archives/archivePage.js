@@ -5,10 +5,12 @@ import PDome3 from '../../page/assets/images/PDome3.jpg';
 import PDome4 from '../../page/assets/images/PDome4.jpg';
 import PDome5 from '../../page/assets/images/PDome5.jpg';
 import PDome6 from '../../page/assets/images/PDome6.jpg';
+import PDome7 from '../../page/assets/images/PDome7.jpg';
 import Weekender from '../../page/assets/images/Weekender.jpg';
 import './archivePage.css';
 
 const archiveData = [
+  { title: 'June 2025', imageUrl: PDome7, description: 'Pleasure Dome 7' },
   { title: 'Mai 2025', imageUrl: Weekender, description: 'Vinegar Syndrome Weekender' },
   { title: 'April 2025', imageUrl: PDome6, description: 'Pleasure Dome 6' },
   { title: 'November 2024', imageUrl: PDome5, description: 'Pleasure Dome 5' },

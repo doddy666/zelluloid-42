@@ -8,10 +8,12 @@ import PDome6 from '../../page/assets/images/PDome6.jpg';
 import PDome7 from '../../page/assets/images/PDome7.jpg';
 import PDome8 from '../../page/assets/images/PDome8.jpg';
 import PDome9 from '../../page/assets/images/PDome9.jpg';
+import PDome11 from '../../page/assets/images/PDome11.jpg';
 import Weekender from '../../page/assets/images/Weekender.jpg';
 import './archivePage.css';
 
 const archiveData = [
+  { title: 'September 2025', imageUrl: PDome11, description: 'Pleasure Dome 11' },
   { title: 'September 2025', imageUrl: PDome9, description: 'Pleasure Dome 9' },
   { title: 'July 2025', imageUrl: PDome8, description: 'Pleasure Dome 8' },
   { title: 'June 2025', imageUrl: PDome7, description: 'Pleasure Dome 7' },

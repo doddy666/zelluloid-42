@@ -1,6 +1,6 @@
 import React from 'react';
 import './promoBox.css';
-import mV1 from '../../assets/images/mondovideo_nekromantik.jpg';
+import PDome13 from '../../assets/images/PDome13.jpg';
 import Button from '../../../component/button/button';
 
 const PromoBox = () => {
@@ -10,14 +10,14 @@ const PromoBox = () => {
         <h2>Upcoming Screenings</h2>
       </div>
       <div className="promo-item">
-        <div className="promo-date-top">March 7th</div>
+        <div className="promo-date-top">April 26th</div>
         <div className="promo-images-row">
           <a
             href="https://linktr.ee/zelluloid42"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={mV1} alt="Pleasure Dome" className="promo-image" />
+            <img src={PDome13} alt="Pleasure Dome" className="promo-image" />
           </a>
         </div>
         <div className="button-group">

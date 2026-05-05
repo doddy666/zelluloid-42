@@ -1,6 +1,6 @@
 import React from 'react';
 import './promoBox.css';
-import PDome13 from '../../assets/images/PDome13.jpg';
+import MVII from '../../assets/images/MVII.jpg';
 import Button from '../../../component/button/button';
 
 const PromoBox = () => {
@@ -17,7 +17,7 @@ const PromoBox = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={PDome13} alt="Pleasure Dome" className="promo-image" />
+            <img src={MVII} alt="Mondo Video" className="promo-image" />
           </a>
         </div>
         <div className="button-group">

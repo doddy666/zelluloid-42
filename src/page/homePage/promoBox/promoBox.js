@@ -10,7 +10,7 @@ const PromoBox = () => {
         <h2>Upcoming Screenings</h2>
       </div>
       <div className="promo-item">
-        <div className="promo-date-top">April 26th</div>
+        <div className="promo-date-top">May 30</div>
         <div className="promo-images-row">
           <a
             href="https://linktr.ee/zelluloid42"

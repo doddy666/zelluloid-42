@@ -14,10 +14,12 @@ import PDome12 from '../../page/assets/images/PDome12.jpg';
 import Mv1 from '../../page/assets/images/mondovideo_nekromantik.jpg';
 import PDome13 from '../../page/assets/images/PDome13.jpg';
 import MVII from '../../page/assets/images/MVII.jpg';
+import PDome14 from '../../page/assets/images/PDome14.jpg';
 import Weekender from '../../page/assets/images/Weekender.jpg';
 import './archivePage.css';
 
 const archiveData = [
+  { title: 'Juni 2026', imageUrl: PDome14, description: 'Pleasure Dome 14' },
   { title: 'Mai 2026', imageUrl: MVII, description: 'Mondo Video 2' },
   { title: 'April 2026', imageUrl: PDome13, description: 'Pleasure Dome 13' },
   { title: 'März 2026', imageUrl: Mv1, description: 'Mondo Video' },

@@ -14,7 +14,7 @@ import PDome12 from '../../page/assets/images/PDome12.jpg';
 import Mv1 from '../../page/assets/images/mondovideo_nekromantik.jpg';
 import PDome13 from '../../page/assets/images/PDome13.jpg';
 import MVII from '../../page/assets/images/MVII.jpg';
-import PDome14 from '../../page/assets/images/PDome14.jpg';
+import PDome14 from '../../page/assets/images/PDome14.jpeg';
 import Weekender from '../../page/assets/images/Weekender.jpg';
 import './archivePage.css';
 
